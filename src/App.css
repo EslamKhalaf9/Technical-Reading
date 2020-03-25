@@ -1,0 +1,157 @@
+/* Main Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: #333; */
+}
+
+:root {
+  --blackColor: #333;
+  --successColor: rgb(3, 168, 124);
+}
+
+/* Main utilities */
+.brand {
+  font-family: 'Courier New', Courier, monospace;
+}
+.brand a {
+  color: var(--blackColor);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background-color: none;
+  border: none;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: var(--successColor);
+}
+
+.btn-success:hover {
+  background-color: rgb(6, 146, 109);
+}
+
+.tag {
+  background-color: #f1f1f1;
+  margin: 0.3em;
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+.tag a {
+  color: var(--blackColor);
+  text-decoration: none;
+}
+
+/* Header Component */
+.main-nav {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.79);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  max-height: 15%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 1rem;
+}
+
+.nav-link {
+  color: var(--blackColor);
+  text-decoration: none;
+  padding: 1rem;
+  /* align-self: center; */
+}
+/* Wrapper */
+.wrapper {
+  margin-top: 10%;
+}
+/* Home Component */
+.home-section {
+  text-align: center;
+}
+
+.show-p {
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--blackColor);
+  margin-bottom: 1em;
+}
+
+.categories {
+  width: 50%;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3em auto;
+  min-height: 60vh;
+}
+
+.form .form-title {
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  margin: 1rem;
+}
+
+.input-text {
+  margin: 0.5em 0;
+  border: 1px solid #ddd;
+  padding-left: 0.5em;
+  color: var(--successColor);
+  display: flex;
+  align-items: center;
+}
+
+.input-text input[type='text'],
+.input-text input[type='password'] {
+  border: none;
+  padding: 0.5em 1em;
+  margin-left: 0.5em;
+  font-size: 1.3em;
+}
+
+/* LoginForm */
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: var(--blackColor);
+  padding: 2em 0;
+  color: #fff;
+  margin-top: 2em;
+}
